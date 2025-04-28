@@ -40,6 +40,9 @@
 }
 
 .infinite-scroll-item {
+  min-width: 90vw;
+  max-width: 98vw;
+
   --accent-color: #ffffff;
   border-radius: 0;
   display: flex;
