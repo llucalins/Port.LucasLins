@@ -11,7 +11,7 @@ const Sobre = () => (
       style={{ fontSize: '2.6rem', marginTop: '1.5rem', lineHeight: 1.3 }}
     />
     <BlurText
-      text="Atualmente, estou me especializando no desenvolvimento frontend, com foco em HTML, CSS e React. Gosto de criar interfaces modernas, intuitivas e funcionais, sempre pensando na melhor experiência para o usuário. Este portfólio reúne projetos que demonstram minha dedicação, meu olhar para o design e minha evolução constante como desenvolvedor."
+      text="Busco criar interfaces modernas, responsivas e fáceis de usar, sempre com atenção ao design, à organização do código e à experiência do usuário. Estou em constante evolução, sempre praticando e aprendendo novas tecnologias para me tornar um desenvolvedor cada vez melhor."
       delay={30}
       animateBy="words"
       direction="bottom"
