@@ -1,0 +1,41 @@
+.dock-contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2.5rem;
+  padding: 2rem 0 2.5rem 0;
+}
+.dock-contact-icon {
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), filter 0.18s cubic-bezier(.4,2,.6,1);
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.25));
+  cursor: pointer;
+  will-change: transform, filter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dock-contact-icon:hover {
+  transform: scale(1.45) translateY(-18px);
+  filter: drop-shadow(0 12px 32px #00eaff88);
+  z-index: 2;
+}
+.dock-contact-label {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30,30,40,0.85);
+  border-radius: 7px;
+  padding: 0.2rem 0.9rem;
+  box-shadow: 0 2px 10px #0006;
+}
+.dock-contact-icon:hover .dock-contact-label {
+  opacity: 1;
+}

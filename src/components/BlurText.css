@@ -1,0 +1,52 @@
+.blur-text-animated, .blur-text {
+  position: relative;
+  display: inline-block;
+  color: #fff !important;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.blur-text-piece {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(var(--blur-amount, 8px));
+  transform: translateY(0);
+  transition:
+    opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    filter 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.blur-text-piece.active {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0) translateX(0);
+}
+
+.direction-top.blur-text-piece {
+  transform: translateY(30px);
+}
+.direction-top.blur-text-piece.active {
+  transform: translateY(0);
+}
+
+.direction-bottom.blur-text-piece {
+  transform: translateY(-30px);
+}
+.direction-bottom.blur-text-piece.active {
+  transform: translateY(0);
+}
+
+.direction-left.blur-text-piece {
+  transform: translateX(30px);
+}
+.direction-left.blur-text-piece.active {
+  transform: translateX(0);
+}
+
+.direction-right.blur-text-piece {
+  transform: translateX(-30px);
+}
+.direction-right.blur-text-piece.active {
+  transform: translateX(0);
+}

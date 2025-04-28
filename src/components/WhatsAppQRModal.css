@@ -1,0 +1,35 @@
+.waqr-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.waqr-modal-content {
+  background: #222;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 40px #000a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.waqr-modal-close {
+  margin-top: 1.2rem;
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #25d36644;
+  transition: background 0.18s;
+}
+.waqr-modal-close:hover {
+  background: #1ebe5d;
+}
