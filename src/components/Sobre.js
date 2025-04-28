@@ -4,7 +4,7 @@ const Sobre = () => (
   <section id="sobre" className="section">
     <BlurText text="Sobre Mim" delay={80} animateBy="words" direction="top" style={{ fontSize: '4.2rem', fontWeight: 800, marginBottom: '2.5rem' }} />
     <BlurText
-      text="Olá! Me chamo Lucas, sou professor de informática e apaixonado por tecnologia. Tenho experiência no ensino de computação para crianças, usando a programação como ferramenta para estimular o pensamento lógico e criativo."
+      text="Sou Lucas, desenvolvedor frontend com foco em HTML, CSS e React. Atuei como professor de informática, ensinando tecnologia e programação, e agora estou em transição de carreira para me dedicar totalmente ao desenvolvimento de software."
       delay={30}
       animateBy="words"
       direction="bottom"
